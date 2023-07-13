@@ -1,10 +1,10 @@
 <?php
 
 class Movie {
-    public $title;
-    public $originaLenguage;
-    public $minuts;
-    public $genere;
+    $title;
+    $originaLenguage;
+    $minuts;
+    $genere;
 
     function__construct(String $_title, String $_originaLenguage, Int $_minuts, String $_genere){
         $this->title = $_title;
