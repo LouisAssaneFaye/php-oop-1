@@ -1,12 +1,12 @@
 <?php
 
 class Movie {
-    $title;
-    $originaLenguage;
-    $minuts;
-    $genere;
+    public $title;
+    public $originaLenguage;
+    public $minuts;
+    public $genere;
 
-    function__construct(String $_title, String $_originaLenguage, Int $_minuts, String $_genere){
+    function __construct(String $_title, String $_originaLenguage, Int $_minuts, String $_genere){
         $this->title = $_title;
         $this->originaLenguage = $_originaLenguage;
         $this->minuts = $_minuts;
@@ -14,28 +14,30 @@ class Movie {
 
     }
 
-    function getTitle(){
+    public function getTitle(){
         return $this->title;
     }
-    function getOriginaLenguage(){
+    public function getOriginaLenguage(){
         return $this->originaLenguage;
     }
-    function getMinuts(){
+    public function getMinuts(){
         return $this->minuts;
     }
-    function getGenere(){
+    public function getGenere(){
         return $this->genere;
     }
 }
 
-$troy = new Movie ('troy', 'english', '90', 'fantasy');
+$troy = new Movie ('troy', 'english', 90, 'fantasy');
 echo $troy-> getTitle();
 echo $troy-> getOriginaLenguage();
 echo $troy-> getMinuts();
 echo $troy-> getGenere();
+var_dump($troy);
 
-$titanic = new Movie ('titanic', 'english', '120', 'drama');
-echo $troy-> getTitle();
-echo $troy-> getOriginaLenguage();
-echo $troy-> getMinuts();
-echo $troy-> getGenere();
+$titanic = new Movie ('titanic', 'english', 120, 'drama');
+echo $titanic-> getTitle();
+echo $titanic-> getOriginaLenguage();
+echo $titanic-> getMinuts();
+echo $titanic-> getGenere();
+var_dump($titanic);
